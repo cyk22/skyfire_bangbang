@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Control : MonoBehaviour {
+	public GameObject anotherMenu;
 
 	Animator anim;
 	// Use this for initialization
@@ -18,6 +19,10 @@ public class Control : MonoBehaviour {
 	public void ClickOpen(){
 		anim.SetBool ("Open", true);
 		anim.SetBool ("Close", false);
+		if (anotherMenu.GetComponent<Animator> ().GetBool ("Open") == true) {
+			anotherMenu.GetComponent<Animator> ().SetBool ("Open", false);
+			anotherMenu.GetComponent<Animator> ().SetBool ("Close", true);
+		}
 	}
 
 	public void ClickClose(){

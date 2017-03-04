@@ -106,7 +106,11 @@ public class ArcherControl : MonoBehaviour {
 		Instantiate(ArcherAttackParticle,vc,transform.rotation);
 
 
-		enemy.GetComponent<Enemy> ().currentHP -= damage;
+		if (enemy.GetComponent<Enemy> () != null) {
+			enemy.GetComponent<Enemy> ().currentHP -= damage;
+		} else {
+			enemy.GetComponent<Enemy_boss> ().currentHP -= damage;
+		}
 
 		Instantiate (BeingAttackArcher, enemy.transform.position, enemy.transform.rotation);
 

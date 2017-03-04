@@ -19,7 +19,6 @@ public class Property : MonoBehaviour {
 
 
 	public void Start(){
-		Debug.Log (Time.time - leaveTime + "&&&&&"+ leaveTime);
 		nextTime = Time.time;
 		interval = 3;
 		Property.coins +=(int) ((Time.time - leaveTime) / (float)interval * (float)Craftman_Manager.alchemist);

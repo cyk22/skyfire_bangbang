@@ -4,16 +4,15 @@ using UnityEngine;
 
 public class CharacterPos : MonoBehaviour {
 
-	public static Vector3 pos;
+	public static Vector3 pos = new Vector3(39, -36, -5);
 	public static Vector3 tentPos;
 
 
 	void Awake(){
 
-		pos = GameObject.FindGameObjectWithTag ("Player").transform.position;
 		tentPos = GameObject.FindGameObjectWithTag ("Tent").transform.position;
 
-		tentPos.y -= 2.2f;
+		tentPos.y -= 2.5f;
 		tentPos.x += 0.5f;
 
 //		Debug.Log (tentPos.x);

@@ -100,9 +100,12 @@ public class WizardControl : MonoBehaviour {
 		vc = new Vector3(transform.position.x+3f,transform.position.y+0.5f,transform.position.z);
 		Instantiate(wizardAttackParticle,vc,transform.rotation);
 
+		if (enemy.GetComponent<Enemy> () != null) {
+			enemy.GetComponent<Enemy> ().currentHP -= damage;
+		} else {
+			enemy.GetComponent<Enemy_boss> ().currentHP -= damage;
+		}
 
-		enemy.GetComponent<Enemy> ().currentHP -= damage;
-	
 		Instantiate (beingAttackParticle, enemy.transform.position, enemy.transform.rotation);
 
 

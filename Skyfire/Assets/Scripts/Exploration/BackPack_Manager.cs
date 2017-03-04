@@ -6,6 +6,7 @@ public class BackPack_Manager : MonoBehaviour {
 
 	public static int size = Backpack.size;
 	public static int used = Backpack.used;
+	public static int addedTimes = 1;
 
 
 	void Update(){
@@ -13,10 +14,11 @@ public class BackPack_Manager : MonoBehaviour {
 	}
 
 	public void add_backPackSpace(){
-		if (Property.coins >= 20) {
+		if (Property.coins >= 50 * addedTimes) {
 			size+=10;
 			Backpack.size = size;
-			Property.coins -= 20;
+			Property.coins -= 50 * addedTimes;
+			addedTimes++;
 		}
 	}
 }

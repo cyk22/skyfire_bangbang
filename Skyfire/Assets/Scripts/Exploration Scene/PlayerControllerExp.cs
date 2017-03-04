@@ -20,7 +20,9 @@ public class PlayerControllerExp : MonoBehaviour {
 		//Backpack.bread = 20;
 		transform  = GetComponent<Transform>();
 		ani = GetComponent<Animator>();
-		gameObject.GetComponent<Transform> ().position = CharacterPos.pos;
+		this.gameObject.transform.position = CharacterPos.pos;
+		Debug.Log (CharacterPos.pos);
+		Debug.Log (this.transform.position);
         //anim1 = GetComponent<Animator>();
         myrigidbody = GetComponent<Rigidbody2D>();
 		//keys = 0;
@@ -34,12 +36,25 @@ public class PlayerControllerExp : MonoBehaviour {
 
         if (needBread()==true)
         {
+			CharacterPos.setTent ();
             SceneManager.LoadScene("Scenes/DarkWorld", LoadSceneMode.Single);
         }
 
+		if ((Input.GetAxisRaw("Horizontal") > -0.5f) && (Input.GetAxisRaw("Horizontal") < 0.5f))
+		{
+			myrigidbody.velocity = new Vector2(0f, myrigidbody.velocity.y);
+			ani.SetBool ("Idle", true);
+			ani.SetBool ("Walk", false);
+		} 
+		if ((Input.GetAxisRaw("Vertical") < 0.5f) && (Input.GetAxisRaw("Vertical") > -0.5f))
+		{
+			myrigidbody.velocity = new Vector2(myrigidbody.velocity.x, 0f);
+			ani.SetBool ("Idle", true);
+			ani.SetBool ("Walk", false);
+		} 
+
 		if ((Input.GetAxisRaw("Horizontal")>0.5f))
         {
-			ani.SetBool ("Idle", false);
 			ani.SetBool ("Walk", true);
             //transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") *playerSpeed *Time.deltaTime,0f,0f));
             myrigidbody.velocity = new Vector2(Input.GetAxisRaw("Horizontal")*playerSpeed, myrigidbody.velocity.y);
@@ -52,7 +67,6 @@ public class PlayerControllerExp : MonoBehaviour {
 
 		if ((Input.GetAxisRaw("Horizontal") < -0.5f))
 		{
-			ani.SetBool ("Idle", false);
 			ani.SetBool ("Walk", true);
 			//transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") *playerSpeed *Time.deltaTime,0f,0f));
 			myrigidbody.velocity = new Vector2(Input.GetAxisRaw("Horizontal")*playerSpeed, myrigidbody.velocity.y);
@@ -64,29 +78,13 @@ public class PlayerControllerExp : MonoBehaviour {
 
         if ((Input.GetAxisRaw("Vertical") > 0.5f) || (Input.GetAxisRaw("Vertical") < -0.5f))
         {
-			ani.SetBool ("Idle", false);
 			ani.SetBool ("Walk", true);
             //transform.Translate(new Vector3(0f,Input.GetAxisRaw("Vertical") * playerSpeed * Time.deltaTime, 0f));
             myrigidbody.velocity = new Vector2(myrigidbody.velocity.x, Input.GetAxisRaw("Vertical")*playerSpeed);
 			Bag_Bread.bagbread = Bag_Bread.bagbread - 0.02f;
 
         }
-
-
-        if ((Input.GetAxisRaw("Horizontal") > -0.5f) && (Input.GetAxisRaw("Horizontal") < 0.5f))
-        {
-            myrigidbody.velocity = new Vector2(0f, myrigidbody.velocity.y);
-			ani.SetBool ("Idle", true);
-			ani.SetBool ("Walk", false);
-        } 
-        if ((Input.GetAxisRaw("Vertical") < 0.5f) && (Input.GetAxisRaw("Vertical") > -0.5f))
-        {
-            myrigidbody.velocity = new Vector2(myrigidbody.velocity.x, 0f);
-			ani.SetBool ("Idle", true);
-			ani.SetBool ("Walk", false);
-        } 
-
-           // anim1.SetFloat("Movex", Input.GetAxisRaw("Horizontal"));
+       // anim1.SetFloat("Movex", Input.GetAxisRaw("Horizontal"));
        // anim1.SetFloat("Movey", Input.GetAxisRaw("Vertical"));
     }
 

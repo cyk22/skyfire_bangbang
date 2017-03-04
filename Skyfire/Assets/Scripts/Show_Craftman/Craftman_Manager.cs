@@ -5,7 +5,7 @@ public class Craftman_Manager : MonoBehaviour {
 
 	public Craftman_Manager cf_manager;
 
-	public static int num_cf = Building_Manager.workshop;
+	public static int num_cf = Building_Manager.workshop * 10;
 	public static int used_cft = 0;
 
 	public static int baker = 0;
@@ -42,14 +42,14 @@ public class Craftman_Manager : MonoBehaviour {
 			if (baker > 0) {
 				used_cft--;
 				baker--;
-				Property.coins += Baker.price;
+				Property.coins += (int)(0.5 * Baker.price);
 			}
 			break;
 		case "alchemist":
 			if (alchemist > 0) {
 				used_cft--;
 				alchemist --;
-				Property.coins += Alchemist.price;
+				Property.coins += (int)(0.5 * Alchemist.price);
 			}
 			break;
 		}

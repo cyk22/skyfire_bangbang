@@ -31,7 +31,6 @@ public class Escape : MonoBehaviour {
 
 	public void clicked()
 	{
-		Debug.Log ("click!");
 //		enemy.enabled = true;
 		Invoke ("back", restartDelay);
 
@@ -48,7 +47,7 @@ public class Escape : MonoBehaviour {
 
 	public void back()
 	{
-		Debug.Log ("backed");
+		Debug.Log (CharacterPos.pos);
 		SceneManager.LoadScene ("Scenes/main", LoadSceneMode.Single);
 	}
 

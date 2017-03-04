@@ -40,7 +40,6 @@ public class PlayerBomb : MonoBehaviour {
 		Collider2D enemies = Physics2D.OverlapCircle (transform.position, distance, 1 << LayerMask.NameToLayer("Enemies"));
 
 		if (enemies != null) {
-			Debug.Log ("Detected");
 			failedAni.SetBool ("Failed", true);
 			Invoke ("back", restartDelay);
 		}

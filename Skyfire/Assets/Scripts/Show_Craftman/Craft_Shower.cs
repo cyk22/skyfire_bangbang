@@ -12,6 +12,6 @@ public class Craft_Shower : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		text.text = Craftman_Manager.used_cft + "/" + Craftman_Manager.num_cf;
+		text.text = Craftman_Manager.used_cft + "/" + 10 * Building_Manager.workshop;
 	}
 }
