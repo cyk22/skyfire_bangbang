@@ -7,71 +7,49 @@ using UnityEngine.SceneManagement;
 public class Escape : MonoBehaviour {
 
 
-	public float restartDelay = 2f;
+	public float restartDelay = 1f;
 	Animator anim;
-	GameObject player;
-	GameObject enemy;
-
-
-	float restartTimer;
-
-	PlayerHealth playerHealth;
-	Animator eneAni;
-	PlayerAttack playerAttack;   //Reference to the Animator component
-	EnemyAttack enemyAttack;  //Reference to the PlayerShotting script
-	EnemyController enemyController;
-	PlayerController playerController;
+	Enemy enemy;
 
 	void Start()
 	{
 		anim = GetComponent<Animator>();
-		player = GameObject.FindGameObjectWithTag ("Player");
-		enemy = GameObject.FindGameObjectWithTag ("Enemy");
-		playerHealth = player.GetComponent<PlayerHealth> ();
-		playerController = player.GetComponent<PlayerController> ();
-		playerAttack = player.GetComponent<PlayerAttack> ();
-		enemyAttack = enemy.GetComponent<EnemyAttack> ();
-		enemyController = enemy.GetComponent<EnemyController> ();
-
-
-
-		eneAni = enemy.GetComponent<Animator>();
-
+		enemy = GetComponent<Enemy> ();
 	}
 
 	void Update()
 	{
-		if (playerHealth.currentHealth <= 0) {
-			anim.SetBool ("Failed", true);
+			//if (restartTimer >= restartDelay)
+			//{
+			//	CharacterPos.setTent ();
 
-			restartTimer += Time.deltaTime;
+			//	SceneManager.LoadScene ("Scenes/DarkWorld", LoadSceneMode.Single);
+			//}
 
-			if (restartTimer >= restartDelay)
-			{
-				CharacterPos.setTent ();
 
-				SceneManager.LoadScene ("Scenes/DarkWorld", LoadSceneMode.Single);
-			}
-
-			eneAni.SetTrigger ("Idle");
-		}
 	}
 
 	public void clicked()
 	{
 		Debug.Log ("click!");
-		anim.SetBool ("Failed", true);
+//		enemy.enabled = true;
+		Invoke ("back", restartDelay);
 
-
-		playerAttack.enabled = false;
 		//enemyAttack.enabled = false;
-		playerHealth.enabled = false;
-		enemyController.enabled = false;
-		playerController.enabled = false;
-		//restartTimer += Time.deltaTime;
 
-		SceneManager.LoadScene("Scenes/main", LoadSceneMode.Single);
+		//Enemy.enabled = false;
+
+		//restartTimer += Time.deltaTime;
+//		restartTimer=0;
+//		if (restartTimer >= restartDelay) {
+
+
 	}
 
+	public void back()
+	{
+		Debug.Log ("backed");
+		SceneManager.LoadScene ("Scenes/main", LoadSceneMode.Single);
+	}
 
 }

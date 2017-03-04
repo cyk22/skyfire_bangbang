@@ -81,3 +81,6 @@
 /Users/cyk/Desktop/skyfire_merged-master/Skyfire/Temp/bin/Debug/PKFxManager.dll
 /Users/cyk/Desktop/skyfire_merged-master/Skyfire/Temp/bin/Debug/PKFx-Runtime.dll
 /Users/cyk/Desktop/skyfire_merged-master/Skyfire/Temp/bin/Debug/PKFx-Helper.dll
+/Users/cyk/Desktop/skyfire_merged-master/Skyfire/Temp/bin/Debug/UnityEngine.Advertisements.dll
+/Users/cyk/Desktop/skyfire_merged-master/Skyfire/Temp/bin/Debug/UnityEngine.Purchasing.dll
+/Users/cyk/Desktop/skyfire_merged-master/Skyfire/Temp/bin/Debug/FX Quest.dll

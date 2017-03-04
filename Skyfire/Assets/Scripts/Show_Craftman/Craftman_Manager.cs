@@ -20,14 +20,14 @@ public class Craftman_Manager : MonoBehaviour {
 	public void add(string job){
 		switch(job){
 		case "baker":
-			if (used_cft < num_cf) {
+			if (Property.coins>Baker.price && used_cft < num_cf) {
 				baker++;
 				used_cft++;
 				Property.coins -= Baker.price;
 			}
 			break;
 		case "alchemist":
-			if (used_cft < num_cf) {
+			if (Property.coins>Alchemist.price && used_cft < num_cf) {
 				alchemist++;
 				used_cft++;
 				Property.coins -= Alchemist.price;

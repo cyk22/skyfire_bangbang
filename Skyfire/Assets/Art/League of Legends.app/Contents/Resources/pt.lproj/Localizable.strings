@@ -1,0 +1,5 @@
+﻿"NO_DMG" = "League of Legends não pode ser executado do DMG. Favor selecionar um local de instalação para League of Legends.";
+"INSTALL_DIRECTORY" = "Diretório de Instalação";
+"BAD_DIRECTORY" = "O diretório que você escolheu é inválido. Favor verificar se tem permissões de gravação ou selecionar outro diretório.";
+"NO_CASE_SENSITIVE" = "O instalador de League of Legends detectou que o sistema de arquivos local diferencia maiúsculas e minúsculas. League of Legends deve ser executado em um sistema que não faça esta distinção. Favor clicar no botão de ajuda para mais informações.";
+"HELP_KB_URL" = "https://support.leagueoflegends.com/entries/21780969-Mac-Game-won-t-install";

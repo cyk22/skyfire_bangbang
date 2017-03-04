@@ -1,0 +1,5 @@
+﻿"NO_DMG" = "Liên Minh Huyền Thoại không thể chạy vì DMG. Vui lòng chọn nơi để cài đặt Liên Minh Huyền Thoại.";
+"INSTALL_DIRECTORY" = "Cài Đặt Đường Dẫn";
+"BAD_DIRECTORY" = "Đường dẫn bạn đã chọn không hợp lệ. Vui lòng xác nhận thư mục bạn có đủ thẩm quyền hoặc chọn một đường dẫn khác.";
+"NO_CASE_SENSITIVE" = "Bộ cài đặt Liên Minh Huyền Thoại đã phát hiện ra tập tin hệ thống thuộc bộ nhận dạng chữ nhạy cảm. Liên Minh Huyền Thoại phải chạy một tập tin hệ thống không nhận dạng chữ nhạy cảm. Vui lòng nhấp vào nút trợ giúp để biết thêm thông tin";
+"HELP_KB_URL" = "https://support.leagueoflegends.com/entries/21780969-Mac-Game-won-t-install";

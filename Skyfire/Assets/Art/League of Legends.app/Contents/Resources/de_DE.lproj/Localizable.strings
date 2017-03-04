@@ -1,0 +1,3 @@
+﻿"NO_DMG" = "League of Legends kann nicht auf Disk-Image-Dateien installiert werden. Bitte wähle ein anderes Verzeichnis.";
+"INSTALL_DIRECTORY" = "Zielverzeichnis";
+"BAD_DIRECTORY" = "Das gewählte Verzeichnis ist ungültig. Bitte überprüfe, ob du Schreibrechte hast, oder wähle ein anderes Verzeichnis.";

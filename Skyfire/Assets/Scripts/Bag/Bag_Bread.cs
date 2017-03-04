@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bag_Bread : MonoBehaviour {
 
-	public static float bagbread = 40;
+	public static float bagbread = 30;
 
 	public void add_bagbread(){
 		if (Property.bread >= 0 && Backpack.used<Backpack.size) {

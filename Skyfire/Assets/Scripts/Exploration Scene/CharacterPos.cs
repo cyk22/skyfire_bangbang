@@ -16,7 +16,7 @@ public class CharacterPos : MonoBehaviour {
 		tentPos.y -= 2.2f;
 		tentPos.x += 0.5f;
 
-		Debug.Log (tentPos.x);
+//		Debug.Log (tentPos.x);
 
 	}
 

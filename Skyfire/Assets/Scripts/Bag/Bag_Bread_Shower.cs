@@ -13,6 +13,6 @@ public class Bag_Bread_Shower : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		text.text = " "+Bag_Bread.bagbread;
+		text.text = " "+ (int)Bag_Bread.bagbread;
 	}
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bag_Fighter : MonoBehaviour {
 
-	public static int b_fighter;
+	public static int b_fighter = 0;
 	// Use this for initialization
 	public void add_b_fighter(){
 		if (Training_Manager.fighter>0 && Backpack.used<Backpack.size) {

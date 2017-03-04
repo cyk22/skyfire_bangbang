@@ -17,8 +17,13 @@ public class ArcherControl : MonoBehaviour {
 	public float speed = 2; 
 	float timer;
 	public float timeBetweenAttack=1f;
+	public float attackTime = 0.5f;
 
+	public GameObject ArcherAttackParticle;
+	public GameObject BeingAttackArcher;
+	public GameObject DeadParticle;
 
+	Vector3 vc;
 
 	// Use this for initialization
 	void Start () {
@@ -57,9 +62,12 @@ public class ArcherControl : MonoBehaviour {
 	}
 
 	public void die(){
+		anim.SetBool("Attack",false);
+		anim.SetBool("Idle",false);
 		anim.SetBool ("Dead",true);
 		isOnGround = false;//unable fighter
 		Invoke("distroy", 3);
+		Invoke("DeadEffect", 3);
 	}
 
 	private void distroy(){
@@ -92,8 +100,24 @@ public class ArcherControl : MonoBehaviour {
 	void Attack()
 	{
 		timer = 0;
+		timer += Time.deltaTime;
 		anim.SetBool("Attack",true);
+		vc = new Vector3(transform.position.x+3f,transform.position.y+0.5f,transform.position.z);
+		Instantiate(ArcherAttackParticle,vc,transform.rotation);
+
+
 		enemy.GetComponent<Enemy> ().currentHP -= damage;
 
+		Instantiate (BeingAttackArcher, enemy.transform.position, enemy.transform.rotation);
+
+
+		if (timer > attackTime) {
+			anim.SetBool ("Idle", true);
+		}
+	}
+
+	void DeadEffect()
+	{
+		Instantiate (DeadParticle, transform.position, transform.rotation);
 	}
 }

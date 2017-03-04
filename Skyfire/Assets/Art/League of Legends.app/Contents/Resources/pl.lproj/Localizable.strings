@@ -1,0 +1,5 @@
+﻿"NO_DMG" = "League of Legends nie może być uruchomiona z DMG. Wybierz katalog do zainstalowania League of Legends.";
+"INSTALL_DIRECTORY" = "Katalog instalacji";
+"BAD_DIRECTORY" = "Wybrany katalog jest nieprawidłowy. Upewnij się, że posiadasz w nim uprawnienia do zapisu albo wybierz inny katalog.";
+"NO_CASE_SENSITIVE" = "Program instalujący wykrył, że lokalny system plików rozróżnia wielkie i małe litery. League of Legends musi działać na systemie nierozróżniającym wielkich i małych liter. Aby dowiedzieć się więcej, kliknij przycisk pomocy.";
+"HELP_KB_URL" = "https://support.leagueoflegends.com/entries/22307105-PL-MAC-ARTICLE";

@@ -58,13 +58,17 @@
      <Compile Include="Assets\Tiled2Unity\Scripts\Editor\SortingLayerExposedEditor.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Editor\Tiled2UnityMenuItems.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Editor\TiledAssetPostProcessor.cs" />
+     <None Include="Assets\FX Quest\!Readme.txt" />
      <None Include="Assets\Readme.txt" />
+     <None Include="Assets\Foriero Store\Projects\Plants\trees_vol_1\sprites\trees@4x\import_spine.txt" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDefault.shader" />
      <None Include="Assets\Tiled2Unity\Prefabs\_ReadMe.txt" />
      <None Include="Assets\Tiled2Unity\Shaders\shaTiledMap.shader" />
      <None Include="Assets\Tiled2Unity\Tiled2Unity.export.txt" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDepth.shader" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDiffuseDepth.shader" />
+     <None Include="Assets\Foriero Store\Projects\Plants\trees_vol_1\sprites\trees@4x\import_unity.xml" />
+     <None Include="Assets\Foriero Store\Projects\Plants\trees_vol_1\sprites\trees@4x\log.txt" />
      <None Include="Assets\Tiled2Unity\Materials\_ReadMe.txt" />
      <None Include="Assets\Tiled2Unity\Textures\_ReadMe.txt" />
      <None Include="Assets\Tiled2Unity\Imported\testarea.tiled2unity.xml" />
@@ -127,6 +131,9 @@
  </Reference>
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="FX Quest">
+ <HintPath>/Users/cyk/Desktop/skyfire_merged-master/Skyfire/Assets/FX Quest/Editor/FX Quest.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

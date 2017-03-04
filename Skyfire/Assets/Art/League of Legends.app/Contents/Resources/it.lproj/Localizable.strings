@@ -1,0 +1,5 @@
+﻿"NO_DMG" = "League of Legends non può essere lanciato dalla DMG (immagine disco). Seleziona una cartella per l'installazione di League of Legends.";
+"INSTALL_DIRECTORY" = "Installa nel percorso";
+"BAD_DIRECTORY" = "Il percorso che hai scelto non è valido. Controlla di avere i permessi di scrittura o scegli un altro percorso.";
+"NO_CASE_SENSITIVE" = "L'installer di League of Legends ha rilevato che il file system locale è case sensitive. League of Legends deve girare su file system non case sensitive. Clicca sul pulsante d'aiuto per ricevere altre informazioni.";
+"HELP_KB_URL" = "https://support.leagueoflegends.com/entries/22015284-IT-MAC-ARTICLE";

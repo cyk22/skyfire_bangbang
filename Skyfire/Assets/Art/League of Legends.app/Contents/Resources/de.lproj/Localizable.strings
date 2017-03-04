@@ -1,0 +1,5 @@
+﻿"NO_DMG" = "League of Legends kann nicht auf Disk-Image-Dateien installiert werden. Bitte wähle ein anderes Verzeichnis.";
+"INSTALL_DIRECTORY" = "Zielverzeichnis";
+"BAD_DIRECTORY" = "Das gewählte Verzeichnis ist ungültig. Bitte überprüfe, ob du Schreibrechte hast, oder wähle ein anderes Verzeichnis.";
+"NO_CASE_SENSITIVE" = "Das Installationsprogramm von League of Legends hat festgestellt, dass das lokale Dateisystem zwischen Groß-/ und Kleinschreibung unterscheidet. League of Legends muss aber auf einem Dateisystem ausgeführt werden, das nicht zwischen Groß-/ und Kleinschreibung unterscheidet. Weitere Informationen erhältst du, wenn du auf Hilfe klickst.";
+"HELP_KB_URL" = "https://support.leagueoflegends.com/entries/22015294-DE-MAC-ARTICLE";

@@ -1,0 +1,5 @@
+﻿"NO_DMG" = "리그 오브 레전드가 DMG를 구동할 수 없습니다. 리그 오브 레전드가 설치된 디렉토리를 선택해 주세요.";
+"INSTALL_DIRECTORY" = "설치 경로";
+"BAD_DIRECTORY" = "선택하신 디렉토리는 사용하실 수 없습니다. 쓰기 권한이 있는지 확인하시거나 다른 디렉토리를 선택해 주세요.";
+"NO_CASE_SENSITIVE" = "현재 로컬 파일 시스템이 대소문자 구분으로 설정되어 있습니다. 리그 오브 레전드는 대소문자를 구분하지 않는 파일 시스템으로 구동하셔야 합니다. 더 자세한 정보는 도움말을 참고해 주세요.";
+"HELP_KB_URL" = "http://www.leagueoflegends.co.kr/Member/Login.php?retUrl=/Member/memModifyCheck.php?retUrl=informationModify.php";

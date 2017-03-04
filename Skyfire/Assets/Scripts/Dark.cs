@@ -11,6 +11,6 @@ public class Dark : MonoBehaviour {
 	}
 
 	public void clicked(){
-		anim.SetBool ("Leave", true);
+		//anim.SetBool ("Leave", true);
 	}
 }

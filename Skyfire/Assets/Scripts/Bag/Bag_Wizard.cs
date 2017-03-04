@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bag_Wizard : MonoBehaviour {
 
-	public static int b_wizard;
+	public static int b_wizard = 0;
 	// Use this for initialization
 	public void add_b_wizard(){
 		if (Training_Manager.wizard>0 && Backpack.used<Backpack.size) {

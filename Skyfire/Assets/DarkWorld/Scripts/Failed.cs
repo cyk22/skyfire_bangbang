@@ -21,4 +21,9 @@ public class Failed : MonoBehaviour {
 	{
 		anim.SetBool ("Failed", true);
 	}
+
+//	public playerKO()
+//	{
+//		
+//	}
 }

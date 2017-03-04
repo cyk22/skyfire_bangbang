@@ -10,21 +10,21 @@ public class Training_Manager : MonoBehaviour {
 	public void training(string soldier){
 		switch (soldier) {
 		case "fighter":
-			if (Property.coins >= Fighter.price && Property.curArmySize <= Property.maxArmySize - Fighter.size) {
+			if (Property.coins>0 && Property.coins >= Fighter.price && Property.curArmySize <= Property.maxArmySize - Fighter.size) {
 				fighter++;
 				Property.coins -= Fighter.price;
 				Property.curArmySize += Fighter.size;
 			}
 			break;
 		case "archer":
-			if (Property.coins >= Fighter.price && Property.curArmySize <= Property.maxArmySize - Archer.size) {
+			if (Property.coins>0 && Property.coins >= Fighter.price && Property.curArmySize <= Property.maxArmySize - Archer.size) {
 				archer++;
 				Property.coins -= Archer.price;
 				Property.curArmySize += Archer.size;
 			}
 			break;
 		case "wizard":
-			if (Property.coins >= Fighter.price && Property.curArmySize <= Property.maxArmySize - Archer.size) {
+			if (Property.coins>0 && Property.coins >= Fighter.price && Property.curArmySize <= Property.maxArmySize - Archer.size) {
 				wizard++;
 				Property.coins -= Wizard.price;
 				Property.curArmySize += Wizard.size;

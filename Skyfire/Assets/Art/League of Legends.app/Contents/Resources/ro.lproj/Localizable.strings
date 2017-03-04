@@ -1,0 +1,5 @@
+﻿"NO_DMG" = "League of Legends nu poate rula de pe DMG. Selectează o locaţie de instalare pentru League of Legends.";
+"INSTALL_DIRECTORY" = "Instalează directorul";
+"BAD_DIRECTORY" = "Directorul pe care l-ai ales nu este valid. Verifică dacă ai permisiuni de scriere sau selectează alt director.";
+"NO_CASE_SENSITIVE" = "Programul de instalare League of Legends a descoperit că sistemul de fişiere local este sensibil la majuscule şi minuscule. League of Legends trebuie să ruleze pe un sistem de fişiere care nu este sensibil la majuscule şi minuscule. Dă clic pe butonul de ajutor pentru a obţine mai multe informaţii.";
+"HELP_KB_URL" = "https://support.leagueoflegends.com/entries/21981269-RO-MAC-ARTICLE";

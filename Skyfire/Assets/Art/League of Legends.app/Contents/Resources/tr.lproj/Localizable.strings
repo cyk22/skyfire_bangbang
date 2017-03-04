@@ -1,0 +1,5 @@
+﻿"NO_DMG" = "League og Legends DMG'den çalıştırılamaz. Lütfen League of Legends'ı yükleyeceğin bir yer seç.";
+"INSTALL_DIRECTORY" = "Dizini Yükle";
+"BAD_DIRECTORY" = "Aradığın dizin geçersiz. Lütfen yazma iznine sahip olduğunu doğrula veya bir başka dizin seç. ";
+"NO_CASE_SENSITIVE" = "League of Legens yükleyicisi, yerel dosya sisteminin büyük/küçük harf ayrımı yaptığını saptadı. League of Legends, büyük/küçük harf ayrımı yapmayan bir dosya sisteminde çalışmalı. Daha fazla bilgi için lütfen yardım butonuna tıkla.";
+"HELP_KB_URL" = "https://support.leagueoflegends.com/entries/22307325-TR-MAC-ARTICLE";

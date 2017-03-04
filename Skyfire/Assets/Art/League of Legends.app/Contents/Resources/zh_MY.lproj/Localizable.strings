@@ -1,0 +1,5 @@
+﻿"NO_DMG" = "英雄联盟无法由 DMG 执行游戏，请指定一个安装的位置。";
+"INSTALL_DIRECTORY" = "安装位置";
+"BAD_DIRECTORY" = "你选定的安装地址是无效的，请再次确认有写入数据的权限或选择其他的文件夹。";
+"NO_CASE_SENSITIVE" = "英雄联盟侦测器感应到你启用了键盘大写。关闭键盘大写设定来继续。请点击说明钮来查看更多信息。";
+"HELP_KB_URL" = "https://support.leagueoflegends.com/entries/21780969-Mac-Game-won-t-install";

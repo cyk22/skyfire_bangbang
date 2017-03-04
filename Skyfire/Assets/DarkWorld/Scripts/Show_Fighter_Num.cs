@@ -14,6 +14,6 @@ public class Show_Fighter_Num : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		text.text = Army.fighter + "";
+		text.text = Bag_Fighter.b_fighter + "";
 	}
 }

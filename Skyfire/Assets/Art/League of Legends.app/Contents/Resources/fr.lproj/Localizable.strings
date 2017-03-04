@@ -1,0 +1,5 @@
+﻿"NO_DMG" = "League of Legends ne peut pas se lancer à partir du DMG. Veuillez sélectionner un répertoire d'installation pour League of Legends.";
+"INSTALL_DIRECTORY" = "Répertoire d'installation";
+"BAD_DIRECTORY" = "Le répertoire choisi est invalide. Assurez-vous d'avoir l'autorisation d'écriture ou sélectionnez un autre répertoire.";
+"NO_CASE_SENSITIVE" = "Le programme d'installation de League of Legends a détecté que le système de fichiers local est sensible à la casse. League of Legends doit être utilisé dans un système de fichiers insensible à la casse. Cliquez sur le bouton d'aide pour plus d'informations.";
+"HELP_KB_URL" = "https://support.leagueoflegends.com/entries/22307165-FR-MAC-ARTICLE";

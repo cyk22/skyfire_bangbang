@@ -14,6 +14,6 @@ public class Show_Archer_Num : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		text.text = Army.archer + "";
+		text.text = Bag_Archer.b_archer + "";
 	}
 }

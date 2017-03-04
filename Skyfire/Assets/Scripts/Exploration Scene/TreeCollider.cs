@@ -20,7 +20,6 @@ public class TreeCollider : MonoBehaviour {
 			CharacterPos.pos = GameObject.FindGameObjectWithTag ("Fight").transform.position;
 
 			CharacterPos.pos.y -= 1.2f;
-
 			SceneManager.LoadScene("Scenes/TowerDefence", LoadSceneMode.Single);
 			Debug.Log ("kjasdhfkl");
 		}

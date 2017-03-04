@@ -34,24 +34,24 @@ public class Draggable : MonoBehaviour,IDragHandler,IBeginDragHandler,IEndDragHa
 		//Camera camera = GetComponent<Camera>();
 //		Debug.Log ("Onbegindrag");
 
-		if (characterPrefab.tag == "Fighter"){  //&& Army.fighter > 0) {
-			//Army.fighter--;
+		if (characterPrefab.tag == "Fighter" && Bag_Fighter.b_fighter > 0) {
+			Bag_Fighter.b_fighter--;
 			obj = Instantiate (characterPrefab, transform.position, transform.rotation) as GameObject;
 			obj.transform.localScale = new Vector3 (-1.5f, 1.5f, -1);
 
 			Vector3 mousePos = Input.mousePosition;
 			mousePos.z = -camera.transform.position.z;
 			obj.transform.localPosition = camera.ScreenToWorldPoint (mousePos);
-	}else if(characterPrefab.tag == "Archer"){  //&& Army.archer > 0){
-			//Army.archer--;
+		}else if(characterPrefab.tag == "Archer" && Bag_Archer.b_archer > 0){
+			Bag_Archer.b_archer--;
 			obj = Instantiate (characterPrefab, transform.position, transform.rotation) as GameObject;
 			obj.transform.localScale = new Vector3 (-1.5f, 1.5f, -1);
 
 			Vector3 mousePos = Input.mousePosition;
 			mousePos.z = -camera.transform.position.z;
 			obj.transform.localPosition = camera.ScreenToWorldPoint (mousePos);
-		}else if(characterPrefab.tag == "Wizard"){ //&& Army.wizard > 0){
-			//Army.wizard--;
+		}else if(characterPrefab.tag == "Wizard" && Bag_Wizard.b_wizard > 0){
+			Bag_Wizard.b_wizard--;
 			obj = Instantiate (characterPrefab, transform.position, transform.rotation) as GameObject;
 			obj.transform.localScale = new Vector3 (-1.5f, 1.5f, -1);
 

@@ -11,7 +11,8 @@ public class FighterController : MonoBehaviour {
 	public float speed = 2;
 	public Animator ani; 
 	//public GameObject soilderHealthBar;
-
+	public GameObject attackParticle;
+	public GameObject DeadParticle;
 
 	public bool isOnGround;
 
@@ -44,9 +45,9 @@ public class FighterController : MonoBehaviour {
 			} else {
 				//move;
 				ani.SetBool("Attack",false);
-				ani.SetBool("Walk",true);
-				transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, 
-					transform.position.y, transform.position.z);
+				//ani.SetBool("Walk",true);
+//				transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, 
+//					transform.position.y, transform.position.z);
 			}
 
 			if (currentHP <= 0) {
@@ -60,6 +61,7 @@ public class FighterController : MonoBehaviour {
 		isOnGround = false;//unable fighter
 		GameObject.Destroy(this.GetComponent<Rigidbody2D>());
 		Invoke("distroy", 3);
+		Invoke("DeadEffect", 3);
 	}
 
 	private void distroy(){
@@ -94,7 +96,12 @@ public class FighterController : MonoBehaviour {
 		ani.SetBool ("Walk", false);
 		ani.SetBool("Attack",true);
 		enemy.GetComponent<Enemy> ().currentHP -= damage;
+		Instantiate (attackParticle, enemy.transform.position, enemy.transform.rotation);
 
+	}
 
+	void DeadEffect()
+	{
+		Instantiate (DeadParticle, transform.position, transform.rotation);
 	}
 }

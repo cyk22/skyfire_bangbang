@@ -1,0 +1,5 @@
+﻿"NO_DMG" = "League of Legends cannot run from the DMG. Please select an install location for League of Legends.";
+"INSTALL_DIRECTORY" = "Install Directory";
+"BAD_DIRECTORY" = "The directory you have chosen is invalid. Please verify you have write permissions or select another directory.";
+"NO_CASE_SENSITIVE" = "The League of Legends installer has detected that the local file system is case sensitive. League of Legends must run on a non-case-sensitive file system. Please click the help button for more information.";
+"HELP_KB_URL" = "https://support.leagueoflegends.com/entries/21780969-Mac-Game-won-t-install";

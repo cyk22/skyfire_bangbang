@@ -15,6 +15,8 @@ public class Enemy : MonoBehaviour {
 	int i =0;
 	public bool isOnGround;
 
+	public GameObject EnemyAttackParticle;
+	public GameObject DeadParticle;
 
 	private GameObject enemy;
 	public GameObject enemyHealthBar;
@@ -72,6 +74,7 @@ public class Enemy : MonoBehaviour {
 		isOnGround = false;//unble fighter
 		GameObject.Destroy(this.GetComponent<Rigidbody2D>());
 		Invoke("distroy", 3);
+		Invoke("DeadEffect", 3);
 	}
 
 	private void distroy(){
@@ -113,17 +116,34 @@ public class Enemy : MonoBehaviour {
 
 		if (enemy.tag == "Fighter") {
 			enemy.GetComponent<FighterController> ().currentHP -= damage;
+			Instantiate (EnemyAttackParticle, enemy.transform.position, enemy.transform.rotation);
 		}
 		if (enemy.tag == "Wizard") {
 			enemy.GetComponent<WizardControl> ().currentHP -= damage;
+			Instantiate (EnemyAttackParticle, enemy.transform.position, enemy.transform.rotation);
 		}
 		if (enemy.tag == "Archer") {
 			enemy.GetComponent<ArcherControl> ().currentHP -= damage;
+			Instantiate (EnemyAttackParticle, enemy.transform.position, enemy.transform.rotation);
 		}
-		if (enemy.tag == "Player") {
-			enemy.GetComponent<PlayerInFight> ().HP -= damage;
-			failedAni.SetBool ("Failed", true);
-		}
+//		if (enemy.tag == "Player") {
+//			enemy.GetComponent<PlayerInFight> ().HP -= damage;
+//			failedAni.SetBool ("Failed", true);
+//		}
 
 	}
+
+	void DeadEffect()
+	{
+		Instantiate (DeadParticle, transform.position, transform.rotation);
+	}
+
+//	void destroyParticle(){
+//		float timer;
+//		gameObject pc;
+//
+//		timer += Time.deltaTime;
+//
+//		if (timer>pc.)
+//	}
 }
