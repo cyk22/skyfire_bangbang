@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bag_Archer : MonoBehaviour {
 
-	public static int b_archer = 100;
+	public static int b_archer = 0;
 	// Use this for initialization
 	public void add_b_archer(){
 		if (Training_Manager.archer>0 && Backpack.used<Backpack.size) {

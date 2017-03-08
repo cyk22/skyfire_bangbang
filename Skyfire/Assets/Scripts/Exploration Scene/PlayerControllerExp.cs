@@ -38,6 +38,9 @@ public class PlayerControllerExp : MonoBehaviour {
         {
 			CharacterPos.setTent ();
             SceneManager.LoadScene("Scenes/DarkWorld", LoadSceneMode.Single);
+			Bag_Archer.b_archer = 0;
+			Bag_Wizard.b_wizard = 0;
+			Bag_Fighter.b_fighter = 0;
         }
 
 		if ((Input.GetAxisRaw("Horizontal") > -0.5f) && (Input.GetAxisRaw("Horizontal") < 0.5f))

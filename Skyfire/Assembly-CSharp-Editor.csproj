@@ -126,14 +126,14 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
+ <Reference Include="FX Quest">
+ <HintPath>/Users/cyk/Desktop/skyfire_merged-master/Skyfire/Assets/Gizmos/FX Quest/Editor/FX Quest.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="FX Quest">
- <HintPath>/Users/cyk/Desktop/skyfire_merged-master/Skyfire/Assets/Gizmos/FX Quest/Editor/FX Quest.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

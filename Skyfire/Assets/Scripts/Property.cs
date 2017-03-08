@@ -4,8 +4,8 @@ using System.Collections;
 public class Property : MonoBehaviour {
 
 	public static int coins = 2000;
-	public static int bread = 2000;
-	public static int wheat = 200;
+	public static int bread = 200;
+	//public static int wheat = 200;
 
 	public static int curArmySize = 0;
 	public static int curWorkingCf = 0;

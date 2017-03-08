@@ -79,6 +79,7 @@
      <Compile Include="Assets\Scripts\Bag\Bag_Wizard.cs" />
      <Compile Include="Assets\Scripts\Bag\Bag_Wizard_Shower.cs" />
      <Compile Include="Assets\Scripts\BreadCollider.cs" />
+     <Compile Include="Assets\Scripts\BreadConstraint.cs" />
      <Compile Include="Assets\Scripts\Building\Building_Manager.cs" />
      <Compile Include="Assets\Scripts\Dark.cs" />
      <Compile Include="Assets\Scripts\Enemy_boss.cs" />
@@ -131,6 +132,7 @@
      <Compile Include="Assets\Scripts\Trigger\Fight3.cs" />
      <Compile Include="Assets\Scripts\Trigger\Key_Trigger.cs" />
      <Compile Include="Assets\Scripts\Victory.cs" />
+     <Compile Include="Assets\Scripts\Victory_boss.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\ImportBehaviour.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\Layer.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\ObjectLayer.cs" />
