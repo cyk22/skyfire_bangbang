@@ -29,6 +29,7 @@ public class PlayerBomb : MonoBehaviour {
 	public void back()
 	{
 		Debug.Log ("backed");
+		CharacterPos.setTent ();
 		SceneManager.LoadScene ("Scenes/DarkWorld", LoadSceneMode.Single);
 		Bag_Fighter.b_fighter = 0;
 		Bag_Wizard.b_wizard = 0;
